@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+<head>
+    <title>My Calculator</title>
+
+<style>
+    h1{
+        text-align: center;
+        font-family: Brush Script MT;
+        color: orangered;
+    }
+
+</style>
+</head>
+
+<body>
+    <h1><u>*****THANK YOU FOR USING MY CALCULATOR*****</u></h1>
+
+<script>
+//Author: by Jonathan Bagua, Switch Maven Batch (2) 2021
+//Date: 4:02:2021
+
+//Welcome Message
+alert ("********Hello and Welcome to my Basic Calculator. Please select your choice of operation next.********");
+alert ("Please select your choice:\n\n *Select (1) for - Addition\n *Select (2) for - Subtraction\n *Select (3) for - Multiplication\n *Select (4) for - Division");
+
+let choice = prompt("What is your choice ? (1,2,3 or 4) *****");//User is prompt with a choice to choose from (1,2,3 or 4)
+
+if (choice === "1"){ //If choice is 1, it calls the addition function
+    add();
+}else if(choice === "2"){//If choice is 2, it calls the subtraction function
+    subtract();
+}else if (choice === "3"){//If choice is 3, it calls the Multiplication function
+    multiply();
+}else if (choice === "4") {//If choice is 4, it calls the Division function 
+    divide();
+}
+
+function add(){//Function for addition
+    alert ("WELCOME TO ADDITION");
+    let number1 = prompt("Enter the first number: ");
+    let number2 = prompt("Enter the second number: ");
+
+    let num1 = parseFloat(number1);//This converts the user input from string to numbers
+    let num2 = parseFloat(number2);//This converts the uer input from string to numbers
+    sum = num1 + num2;
+    alert ("The sum is:  " + sum);
+}
+function subtract(){//Function for subtraction
+    alert ("WELCOME TO SUBTRACTION");
+    let number1 = prompt("Enter the first number: ");
+    let number2 = prompt("Enter the second number: ");
+
+    let num1 = parseFloat(number1);//This converts the user input from string to number
+    let num2 = parseFloat(number2);//This converts the user input from string to number
+    difference = num1 - num2;
+    alert ("The difference is:  " + difference);
+}
+
+function multiply(){//Function for Multiplication 
+    alert ("WELCOME TO MULTIPLICATION");
+    let number1 = prompt("Enter the first number: ");
+    let number2 = prompt("Enter the second number: ");
+
+    let num1 = parseFloat(number1);//This converts the user input from string to number
+    let num2 = parseFloat(number2);//This converts the user input from string to number
+    product = num1 * num2;
+    alert ("The product is:  " + product)
+}
+function divide(){//Function for Division
+    alert ("WELCOME TO DIVISION");
+    let number1 = prompt("Enter the first number: ");
+    let number2 = prompt("Enter the second number: ");
+
+    let num1 = parseFloat(number1);//This converts the user input from string to number
+    let num2 = parseFloat(number2);//This converts the user input from string to number
+    quotient = num1/num2;
+    alert("The quotient is:  "+ quotient);
+}
+
+</script>
+
+</body>
+
+</html>
